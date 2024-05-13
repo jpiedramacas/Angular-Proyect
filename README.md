@@ -1,52 +1,27 @@
+# AngularProyect
 
----
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
 
-# Proyecto de Creación de Prototipo con Desarrollo Basado en Componentes utilizando Angular
+## Development server
 
-Este proyecto es un ejercicio práctico para aprender a desarrollar aplicaciones web utilizando Angular y el enfoque basado en componentes. La aplicación resultante es un administrador de tareas simple que permite agregar nuevas tareas, ver las tareas almacenadas y eliminarlas según sea necesario. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Pasos para ejecutar el proyecto
+## Code scaffolding
 
-1. **Instalación de Angular CLI**:
-   - Antes de comenzar, asegúrate de tener Angular CLI instalado en tu sistema. Si no lo tienes, puedes instalarlo globalmente con el siguiente comando:
-     ```
-     npm install -g @angular/cli
-     ```
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-2. **Creación del Proyecto Angular**:
-   - Crea un nuevo proyecto Angular ejecutando el siguiente comando en tu terminal:
-     ```
-     ng new --no-standalone nombre_de_tu_proyecto
-     ```
+## Build
 
-3. **Generación de Componentes**:
-   - Dentro de tu proyecto, genera los tres componentes necesarios (AddTask, LocalStorageData, DeleteItem) con el siguiente comando para cada uno:
-     ```
-     ng generate component nombre-del-componente
-     ```
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-4. **Ejecución del Entorno de Desarrollo**:
-   - Despliega tu entorno de desarrollo con el siguiente comando y luego haz clic en "Preview Running Application" en Cloud9:
-     ```
-     ng serve --host 0.0.0.0 --port 8080
-     ```
+## Running unit tests
 
-5. **Configuración de las Rutas**:
-   - Asegúrate de que `app-routing.module.ts` contenga todas las rutas de tu aplicación. Debe tener al menos tres rutas definidas.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-6. **Modificación del `app.component`**:
-   - Borra el contenido del archivo `app.component.html` y sustitúyelo por `<router-outlet></router-outlet>` para que actúe como el componente principal que llama al enrutador.
+## Running end-to-end tests
 
-7. **Estilos de la Aplicación**:
-   - Edita el archivo `styles.css` y pega los estilos CSS proporcionados en el proyecto para aplicar estilos a la aplicación.
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-8. **Implementación de los Componentes**:
-   - Modifica los archivos HTML y TypeScript de los componentes `add-task`, `local-storage-data` y `delete-item` según los códigos proporcionados en el proyecto.
+## Further help
 
-9. **Importación de FormsModule y ReactiveFormsModule**:
-   - Asegúrate de importar `FormsModule` y `ReactiveFormsModule` en `app.module.ts` y añadirlos a los imports dentro de `@NgModule`.
-
-Con estos pasos, deberías poder ejecutar y visualizar el proyecto en tu entorno de desarrollo local.
-
----
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
