@@ -1,11 +1,16 @@
 /* Estilos para el contenedor principal */
 .container {
-  margin: 20px auto;
+  position: absolute; /* Posicionamiento absoluto */
+  top: 50%; /* Coloca el borde superior del contenedor en el 50% del viewport */
+  left: 50%; /* Coloca el borde izquierdo del contenedor en el 50% del viewport */
+  transform: translate(-50%, -50%); /* Mueve el contenedor hacia arriba y hacia la izquierda en un 50% de su propio ancho y altura */
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 8px;
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Ancho del contenedor */
+  max-width: 100%; /* Establece el ancho máximo */
 }
 
 /* Estilos para el título */
@@ -13,6 +18,7 @@
   margin-top: 0;
   margin-bottom: 20px;
   font-size: 24px;
+  text-align: center; /* Para centrar el texto */
 }
 
 /* Estilos para el formulario */
